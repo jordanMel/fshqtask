@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
+
+@import "mobile-menu";
+@import "variables";
+@import "header";
+@import "queries";
+@import "immersion";
+@import "comfort";
+@import "utilities";
+@import "product_images";
+@import "thx";
+@import "products";
+@import "footer";
+@import "mixins";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+}
+
+body {
+  background-color: $headerColor;
+}
+
+
+
+.page-body {
+  margin-top: 50px !important;
+}
+
+.hr {
+  display: none;
+  height: 1px;
+  background-color: rgba($gray, $alpha: 0.7);
+  margin: 30px 20px;
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+}
+

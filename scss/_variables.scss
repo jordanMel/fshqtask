@@ -1,0 +1,19 @@
+$accent: #00ff00;
+$headerColor: #0f0f0f;
+$gray: #978e8e;
+$bgColorBlack: #000000;
+
+$cardBgColor: #161415;
+
+$layoutWidth: 1110px;
+
+.bg-black {
+  background-color: $bgColorBlack;
+}
+.accent {
+  color: $accent;
+}
+
+.card-bgColor {
+  background-color: $cardBgColor;
+}

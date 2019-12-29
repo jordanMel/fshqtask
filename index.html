@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+
+<body id="docu-body">
+
+  <section id="header" class="header">
+    <div class="navigation-bar">
+
+      <div id="logo" class="logo">
+        <img class="logo-img" src="assets/Desktop/SVG/wordmark.svg" alt="logo" />
+        <img class="logo-img-mobile" src="assets/Mobile/assets/Mobile/logo.png" alt="logo" />
+      </div>
+
+
+      <div class="navbarwrapper">
+        <div id="dropdown" class="dropdownwrapper">
+          <div style="position: relative;">
+            <button class="dropbtn">
+              PRODUCTS
+              <img id="drop-icon" class="drop-icon" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+            </button>
+          </div>
+
+          <div class="dropdown-content">
+            <a href="#">LAPTOPS</a>
+            <a href="#">MOBILES</a>
+            <a href="#">MOUSES & MATS</a>
+            <a href="#">KEYBOARDS</a>
+            <div id="headset-link" class="headset-link-wrapper" style="position: relative;">
+              <a href="#" class="headsetAudio">HEADSET & AUDIO
+                <img id="icon-forward" class="icon-forward" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="" /></a>
+
+              <div class="headset-menu">
+                <a href="#">WIRELESS</a>
+                <a href="#">WIRED</a>
+              </div>
+            </div>
+
+            <a href="#">CONSOLE</a>
+          </div>
+        </div>
+        <a href="#">ABOUT</a>
+        <a href="#">COMMUNITY</a>
+        <a href="#">CONTACT US</a>
+        <div class="buybtn">
+          <button>BUY NOW</button>
+        </div>
+      </div>
+
+      <div class="menu-iconbtn" onclick="onClickMenuBtn()">
+        <img id="menu-icon" class="menu-icon" src="assets/Mobile/assets/Mobile/1.png" alt="icon" />
+      </div>
+
+    </div>
+  </section>
+
+
+  <div id="menu-mobile" class="menu-mobile">
+    <div class="menu-bar">
+      <h5 class="m-0 fw-600">MENU</h5>
+      <div id="close-btn" class="close-btn" onclick="CloseMenu( document.getElementById('menu-mobile') )">
+        <h1>
+          &times;
+        </h1>
+      </div>
+    </div>
+    <div class="menu-body">
+      <button id="products-link" onclick="showProductsMenu()">PRODUCTS
+        <img id="icon-forward-products" class="icon-forward icon-forward-mobile "
+          src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+        <img id="icon-forward-products-active" class="icon-forward icon-forward-mobile display-none"
+          src="assets/Desktop/SVG/Green Drop Down copy.svg" alt="icon" />
+      </button>
+      <button>ABOUT</button>
+      <button>COMMUNITY</button>
+      <button>CONTACT US</button>
+      <div class="buy-now-mobile">
+        <button class="buy-now-mobile-btn">BUY NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- products menu -->
+  <div id="menu-mobile-products" class="menu-mobile">
+    <div class="menu-bar">
+      <div class="products-title" onclick="CloseMenu(document.getElementById('menu-mobile-products'))">
+        <img height="50px" style="transform:rotate(90deg) ;" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="">
+        <h5 class="m-0 ml-n3 fw-600">PRODUCTS</h5>
+      </div>
+      <div id="close-btn" class="close-btn" onclick="CloseAllMenu()  ">
+        <h1>&times;</h1>
+      </div>
+    </div>
+    <div class="menu-body">
+      <button>LAPTOPS</button>
+      <button>MOBILE</button>
+      <button>MOUSE & MATS</button>
+      <button>KEYBOARDS</button>
+      <button id="headset-linkbtn">HEADSET & AUDIO
+        <img id="icon-forward-headset" class="icon-forward icon-forward-mobile"
+          src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+        <img id="icon-forward-headset-active" class="icon-forward icon-forward-mobile display-none"
+          src="assets/Desktop/SVG/Green Drop Down copy.svg" alt="icon" />
+      </button>
+      <button>CONSOLE</button>
+    </div>
+  </div>
+
+  <!-- headset menu -->
+  <div id="menu-mobile-headset" class="menu-mobile">
+    <div class="menu-bar">
+      <div class="products-title" onclick="CloseMenu(document.getElementById('menu-mobile-headset'))">
+        <img height="50px" style="transform:rotate(90deg) ;" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="">
+        <h5 class="m-0 ml-n3 fw-600">HEADSET & AUDIO</h5>
+      </div>
+      <div id="close-btn" class="close-btn" onclick="CloseAllMenu() ">
+        <h1>&times;</h1>
+      </div>
+    </div>
+    <div class="menu-body">
+      <button>WIRED</button>
+      <button>WIRELESS</button>
+    </div>
+  </div>
+
+
+  <div id="page-body" style="margin-top: 50px;" class="page-body">
+
+
+    <section class="immersion-section">
+      <div class="content">
+        <div class="wrapper-immersion">
+          <div class="text">
+            <h1 class="immersion-title font-weight-bold">SUPREME WIRELESS IMMERSION</h1>
+            <p class="immersion-content">
+              When it comes to gaming immersion, sound plays a critical role. It engages your sense of hearing to
+              determine the atmosphere and mood,
+              creating a lifelike experience that lets you truly embody your game character. Standing by this
+              philosophy, we've built a headset with
+              THX Spatial Audio to bring 360° positional sound, giving you greater spatial awareness. We've also added
+              ergonomic design features to make this
+              one of the most comfortable daily drivers for gaming. This is Razer Nari.
+            </p>
+          </div>
+          <div class="images">
+            <div>
+              <img class="thx-logo" src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
+              <img class="chroma-logo" src="assets/Desktop/PNG/razer-nari-chroma-logo.png" alt="">
+            </div>
+            <img class="razer-nari-logo" style="margin-top: 30px;" src="assets/Desktop/SVG/razer-nari-logo.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="comfort-section">
+      <div class="top">
+        <h5 class="subheader">COMPLEMENTED BY COMFORT</h5>
+        <p>The Razer Nari is designed so that its immersive technology is complemented by comfortable features, letting
+          you escape into game worlds for hours without strain</p>
+      </div>
+      <div class="features">
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg" alt="">
+          <h3>Cooling Gel-Infused Cushions</h3>
+          <p>Reduces Heat Build-up during intense gaming sessions</p>
+
+        </div>
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-Auto-Adjusting-Headband-icon.svg" alt="">
+          <h3>Auto-Adjusting Headband</h3>
+          <p>Maximum adjustability to fit seamlessly onto any head size</p>
+        </div>
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-Swiveling-Earcups-icon.svg" alt="">
+          <h3>Swiveling Earcups</h3>
+          <p>Adapting to the shape and position of your ears</p>
+        </div>
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-Game-Chat-Balance-icon.svg" alt="">
+          <h3>Game/Chat Balance</h3>
+          <p>Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without
+            interrupting team communication</p>
+        </div>
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-Wireless-Audio-icon.svg" alt="">
+          <h3>2.4GHZ Wireless Audio</h3>
+          <p>Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without
+            disconnection.</p>
+        </div>
+        <div>
+          <img src="assets/Desktop/SVG/razer-nari-35-mm-Wired-Mode-icon.svg" alt="">
+          <h3>Wired Mode</h3>
+          <p>Get seamlessly cross-platform compatibility via a 3.5mm audio jack in wired mode. Enjoy high quality stereo
+            sound whether you're playing on PC</p>
+        </div>
+      </div>
+      <div class="hr"></div>
+
+    </section>
+
+
+    <section id="img-products-section" class="img-products-section">
+
+      <h5 class="subheader text-center mb-4">PRODUCT IMAGES</h5>
+
+      <div id="pop-up" class="pop-up">
+        <div id="close">&times;</div>
+        <img id="img-full" src="" alt="">
+      </div>
+      <div id="swiper-container" class="swiper-container">
+        <div id="swiper-wrapper" class="swiper-wrapper">
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+
+    <section id="thx" class="thx-section fade-scroll">
+      <div class="content">
+        <div class="slide-in">
+          <h5 class="subheader">THX SPATIAL AUDIO</h5>
+          <p>THX Spatial Audio goes beyond traditional surround sound by simulating sound in 360° sphere around you.
+            With
+            the Nari Ultimate, you can now react to any in-game movement, even if it's coming from above or beneath you,
+            giving you heightened senses during your game. Unleash your predatory instincts with sound as a weapon.</p>
+          <img src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container-md">
+        <div class="row  justify-content-center font-weight-bolder">
+          <h5 class="subheader  my-5 my-md-5 pt-4 text-center  ">EXPLORE OTHER PRODUCTS</h5>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 ">
+            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+              <div class="position-relative">
+                <img class="card-img-top d-none d-sm-block" src="assets/Desktop/PNG/Nari-Ultimate-Base.png"
+                  alt="Card image cap">
+                <img class="card-img-top d-block d-sm-none" src="assets/Mobile/assets/Mobile/7.jpg"
+                  alt="Card image cap">
+                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                  alt="chroma-logo">
+              </div>
+              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+                <p class="text-white fs-xs font-weight-bold mb-1">RAZER NARI ULTIMATE</p>
+                <p class="card-text text-secondary mb-3  fs-xs">Wireless Gaming Headset with Razer HyperSense</p>
+                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 ">
+            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+              <div class="position-relative">
+                <img class="card-img-top d-none d-sm-block" src="assets/Desktop/PNG/Nari-Ultimate-Base.png"
+                  alt="Card image cap">
+                <img class="card-img-top d-block d-sm-none" src="assets/Mobile/assets/Mobile/7.jpg"
+                  alt="Card image cap">
+                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                  alt="chroma-logo">
+              </div>
+              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+                <p class="text-white fs-xs font-weight-bold mb-1">RAZER NARI </p>
+                <p class="card-text text-secondary mb-3  fs-xs">Wired Gaming Headset with Razer HyperSense</p>
+                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 pb-lg-5  d-none d-sm-block">
+            <div class="card  mx-md-3 mb-4   mb-lg-5 mx-lg-0 border-0 rounded-0 bg-black ">
+              <div class="position-relative">
+                <img class="card-img-top" src="assets/Desktop/PNG/BlackWidow-Elite-Base.png" alt="Card image cap">
+                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                  alt="chroma-logo">
+              </div>
+
+              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+                <p class="text-white fs-xs font-weight-bold mb-1">RAZER MAMBA WIRELESS</p>
+                <p class="card-text text-secondary mb-3  fs-xs">Full Razer Chroma™ and Wireless Convenience</p>
+                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 d-none d-sm-block ">
+            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+              <div class="position-relative">
+                <img class="card-img-top" src="assets/Desktop/PNG/Mamba-Wireless-Base.png" alt="Card image cap">
+                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                  alt="chroma-logo">
+              </div>
+
+              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+                <p class="text-white fs-xs font-weight-bold mb-1 text-truncate">RAZER BLACKKWIDOW ELITE</p>
+                <p class="card-text text-secondary mb-3  fs-xs ">The Complete Mechanical Gaming Keyboard
+                </p>
+                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row display-block d-lg-none">
+          <div class="col text-center">
+            <button class=" mt-md-4  view-products-btn ">VIEW ALL PRODUCTS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+
+      <div class="top-footer">
+        <div class="footer-container">
+          <div class="form-container">
+            <div style="max-width: 550px; width:100%;">
+
+
+
+              <form action="">
+                <h5 class="subheader">ASK A QUESTION</h5>
+                <div class="name-field" required>
+                  <input placeholder="NAME" type="text" required>
+                </div>
+                <div class="phone-field">
+                  <input placeholder="PHONE NUMBER" type="tel" required>
+                </div>
+
+                <div class="full-width">
+                  <input placeholder="EMAIL ADDRESS" type="email" required>
+                </div>
+
+                <div class="full-width">
+                  <input placeholder="PERMANENT ADDRESS" type=" text" required>
+                </div>
+                <div class="full-width">
+                  <textarea placeholder="MESSAGE" minlength="30" name="" id="" rows="6" required></textarea placeholder="MESSAGE">
+                  </div>
+                  <div>
+                    <button type="submit">SEND</button>
+                  </div>
+                </form>
+              </div>
+
+
+
+          </div>
+          <div class="information-container">
+
+            <div>
+              <h5 class="subheader">
+                INFORMATION
+              </h5>
+              <h6>ADDRESS</h6>
+              <p>123 East 123th St. <br>Floor 123<br>New York, NY, 10003</p>
+
+              <h6>PHONE</h6>
+              <p>+1 234 567-8910</p>
+
+              <h6>EMAIL</h6>
+              <p>hello@fullstack.com</p>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div class="side">
+          <img class="footer-logo" src="assets/Desktop/SVG/wordmark.svg" alt="">
+        </div>
+        <div class="center">
+          <p>PRODUCTS</p>
+          <p>ABOUT</p>
+          <p>COMMUNITY</p>
+          <p>CONTACT US</p>
+        </div>
+        <div class="side logo-images">
+          <img src="assets/Mobile/assets/Mobile/twitter.png" alt="">
+          <img src="assets/Mobile/assets/Mobile/fb.png" alt="">
+          <img src="assets/Mobile/assets/Mobile/google.png" alt="">
+        </div>
+      </div>
+
+
+      <div class="copyright">
+        <div class="copyright-text">COPYRIGHT &#9400; 2019 FULLSTACKHQ INC. ALL RIGHTS RESERVED.</div
+          class="copyright-text">
+      </div>
+
+
+
+    </footer>
+
+  </div>
+  <script src="js/menu.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/animation.js"></script>
+
+ 
+
+</body id="docu-body">
+
+</html>

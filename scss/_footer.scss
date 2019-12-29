@@ -1,0 +1,215 @@
+@import "mixins";
+@import "products";
+
+footer {
+  .top-footer {
+    background-color: black;
+    width: 100%;
+    .footer-container {
+      @include layout();
+      background-color: $bgColorBlack;
+      height: 100%;
+
+      .form-container {
+        padding-top: 60px;
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        flex-grow: 6;
+
+        form {
+          padding: 0 30px;
+          width: 100%;
+          grid-row-gap: 15px;
+          display: grid;
+          grid-template-columns: 50% 50%;
+        }
+
+        .name-field {
+          grid-column: 1/2;
+          padding-right: 10px;
+        }
+
+        .phone-field {
+          grid-column: 2/3;
+          padding-left: 10px;
+        }
+        .full-width {
+          grid-column: 1/3;
+        }
+
+        input {
+          height: 40px;
+        }
+
+        textarea {
+          resize: none;
+        }
+
+        input,
+        textarea {
+          width: 100% !important;
+          padding: 10px 10px;
+          color: $gray;
+          border: 1px solid $gray;
+          border-radius: 5px;
+          font-size: 0.8em;
+          outline: none;
+          background-color: transparent;
+
+          &::placeholder {
+            color: $gray;
+            font-size: 0.8em;
+            font-weight: 600;
+          }
+        }
+
+        button {
+          padding: 13px 60px;
+          border-radius: 20px !important;
+          border: none;
+          font-size: 0.6em;
+          letter-spacing: 0.5px !important;
+          color: black;
+          outline: none;
+          font-weight: 800;
+          background-color: $accent !important;
+
+          &:active {
+            background-color: darken($accent, $amount: 30%) !important;
+          }
+        }
+      }
+
+      .information-container {
+        flex: 1;
+        flex-grow: 4;
+        background-color: black;
+        height: 100%;
+        display: flex;
+        padding: 0 30px;
+
+        div {
+          margin: 60px 0;
+          width: 200px;
+
+          h5 {
+            margin-bottom: 30px;
+          }
+          h6,
+          p {
+            font-size: 0.8em;
+            font-weight: 600;
+            color: $gray;
+          }
+          h6 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    @include layout();
+    padding: 0 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .side {
+      .footer-logo {
+        height: 22px;
+        margin: 50px 0;
+      }
+    }
+
+    .logo-images {
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+
+      img {
+        padding: 10px 15px;
+        margin-left: -10px;
+        cursor: pointer;
+      }
+    }
+    .center {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      p {
+        font-size: 0.8em;
+        color: $gray;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    @include layout();
+    padding: 30px 30px;
+    margin-top: 20px;
+    border-top: 1px solid rgba($gray, $alpha: 0.2);
+
+    color: rgba($gray, $alpha: 0.2);
+    font-weight: 600;
+
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    .copyright-text {
+      width: 372px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    justify-content: flex-end !important;
+    margin-bottom: 80px;
+  }
+
+  .footer-container {
+    display: flex;
+
+    .information-container {
+      justify-content: center;
+    }
+  }
+
+  .wrapper {
+    padding: 0 20px !important;
+    flex-direction: row !important;
+    align-items: center;
+
+    .side {
+      flex: 3 !important;
+      .footer-logo {
+        margin: 30px 0 !important;
+      }
+    }
+    .center {
+      flex: 6 !important    ;
+
+      align-items: center;
+      flex-direction: row !important;
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .logo-images {
+      height: 37px;
+      justify-content: flex-end !important;
+      img {
+        margin: 10px !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}

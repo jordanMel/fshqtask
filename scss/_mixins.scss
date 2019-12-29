@@ -1,0 +1,25 @@
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin flexSpaceBEtween() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  @mixin layout {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @mixin subheader {
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+  }

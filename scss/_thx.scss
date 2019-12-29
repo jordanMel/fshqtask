@@ -1,0 +1,59 @@
+@import "mixins";
+@import "variables";
+
+.thx-section {
+  background-image: url(../assets/Mobile/assets/Mobile/6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1.5s;
+  .content {
+    @include layout();
+    width: 100%;
+    padding: 0 30px;
+
+    div {
+      max-width: 330px;
+      h5 {
+        color: $accent;
+        font-weight: 700;
+      }
+      p {
+        margin-top: 20px;
+        line-height: 25px;
+        color: $gray;
+      }
+      img {
+        display: none;
+        height: 130px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .thx-section {
+    background-image: url(../assets/Desktop/JPG/razer-nari-usp02-desktop-wireless-gaming-headset.jpg);
+    height: 500px;
+
+    .content div img {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .thx-section .content {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .thx-section {
+    height: 600px;
+  }
+}

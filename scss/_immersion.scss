@@ -1,0 +1,112 @@
+@import "variables";
+
+.immersion-section {
+  background-image: url(../assets/Mobile/assets/Mobile/banner.png);
+  height: 550px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: 50px !important;
+  background-position: center;
+  background-size: cover;
+  .content {
+    @include layout();
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+    .wrapper-immersion {
+      // margin-top: -50px;
+      height: auto;
+      width: 100%;
+      padding: 0 !important;
+      .text {
+        max-width: 400px;
+        h1 {
+          font-size: 28px;
+          color: white;
+        }
+
+        p {
+          font-size: 14px;
+          color: $gray;
+          margin-top: 10px;
+          line-height: 20px;
+        }
+      }
+
+      .images {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          height: 70px;
+        }
+
+        .razer-nari-logo {
+          display: none;
+          height: 130px !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .text {
+    max-width: 520px !important;
+  }
+
+  .immersion-title {
+    font-size: 34px !important;
+  }
+  .immersion-content {
+    font-size: 14px !important;
+    line-height: 25px !important;
+  }
+
+  .thx-logo,
+  .chroma-logo {
+    height: 90px !important;
+  }
+  .immersion-section {
+    height: 500px;
+    background-image: url(../assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset-CL.jpg) !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .immersion-section {
+    .immersion-title {
+      font-size: 36px !important;
+    }
+    .immersion-content {
+      font-size: 14px !important;
+      line-height: 25px !important;
+    }
+    .razer-nari-logo {
+      display: block !important;
+      margin-right: -32px;
+    }
+    .content {
+      padding: 0 20px !important;
+      .wrapper-immersion {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .immersion-section {
+    height: 500px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .immersion-section {
+    height: 600px !important;
+  }
+}

@@ -1,0 +1,227 @@
+@import "mixins";
+.header {
+  background-color: $headerColor;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navigation-bar {
+  @include layout();
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarwrapper {
+  display: none;
+  overflow: hidden;
+  padding-right: 20px;
+  a {
+    letter-spacing: 1.2px;
+    float: left;
+    color: $gray;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+}
+
+.dropdownwrapper {
+  float: left;
+  width: 120px;
+  overflow: hidden;
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
+
+.dropbtn {
+  .drop-icon {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.dropbtn,
+.navbarwrapper a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.dropdownwrapper .dropbtn {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  border: none;
+  outline: none;
+  color: $gray;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdownwrapper a:hover {
+  color: $accent !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $bgColorBlack;
+  border: 1px solid $headerColor;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: $gray;
+  display: flex !important;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.menu-iconbtn {
+  @include flexCenter();
+  height: 50px;
+  width: 50px;
+}
+
+.menu-icon {
+  height: 14px;
+}
+
+.logo {
+  height: 16px;
+}
+
+.logo-img,
+.logo-img-mobile {
+  height: 16px;
+  padding: 0 20px;
+}
+
+.logo-img {
+  display: none;
+}
+
+.buybtn-wrapper {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+}
+
+.buybtn {
+  float: left;
+  margin-left: 20px;
+  height: 50px;
+  display: flex;
+  padding: 8px 0px;
+
+  button {
+    // width: 130px;
+    padding: 0px 30px;
+    outline: none;
+    color: $headerColor;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+    background-color: $accent;
+    cursor: pointer;
+    font-size: .6em;
+    letter-spacing: 1px;
+    // font-weight: 900;
+    user-select: none;
+    &:active {
+      background-color: darken($accent, $amount: 10%) !important;
+    }
+  }
+}
+
+.icon-forward {
+  height: 40px;
+  transform: rotate(-90deg);
+}
+
+.headsetAudio {
+  width: 220px;
+}
+
+
+.headset-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: $bgColorBlack;
+  width: 220px;
+  border: 1px solid $headerColor;
+}
+
+.headset-link-wrapper:hover > a {
+  color: $accent;
+}
+
+.headset-link-wrapper {
+  &:hover {
+    .headset-menu {
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  // .menu-icon {
+  //   display: block;
+  // }
+
+  .logo-img {
+    display: none;
+  }
+  .logo-img-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbarwrapper {
+    display: block;
+  }
+
+  .logo-img {
+    display: block;
+  }
+  .logo-img-mobile {
+    display: none;
+  }
+
+
+  .menu-mobile {
+    display: none;
+  }
+  .menu-iconbtn {
+    display: none;
+  }
+}

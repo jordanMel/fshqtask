@@ -1,0 +1,55 @@
+@import "variables";
+
+.card {
+  .card-text {
+    min-height: 38px;
+  }
+
+  border-bottom: 3px solid $accent !important;
+
+  .btn {
+    &:focus,
+    &:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    &:hover {
+      color: darken($accent, $amount: 10%) !important;
+    }
+  }
+}
+
+.products-section {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  .view-products-btn {
+    margin: 30px 0;
+    padding: 13px 30px;
+    border-radius: 20px !important;
+    text-align: center;
+    border: 0;
+    font-size: 0.6em;
+    color: $bgColorBlack;
+    outline: none !important;
+    font-weight: 800;
+    background-color: $accent !important;
+    cursor: pointer;
+    &:active {
+      background-color: darken($accent, $amount: 10%) !important;
+    }
+  }
+  .chroma-img {
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    margin: 15px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .products-section {
+    padding: 0 20px !important;
+  }
+}
