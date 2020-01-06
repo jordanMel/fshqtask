@@ -16,7 +16,7 @@
   margin-left: 100%;
   min-height: 100vh;
   background-color: #000000;
-  color: #978e8e !important;
+  color: #978e8e;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -428,7 +428,6 @@
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  margin-top: 50px !important;
   background-position: center;
   background-size: cover;
 }
@@ -450,14 +449,13 @@
 .immersion-section .content .wrapper-immersion {
   height: auto;
   width: 100%;
-  padding: 0 !important;
 }
 
 .immersion-section .content .wrapper-immersion .text {
   max-width: 400px;
 }
 
-.immersion-section .content .wrapper-immersion .text h1 {
+.immersion-section .content .wrapper-immersion .text .immersion-title {
   font-size: 28px;
   color: white;
 }
@@ -485,60 +483,58 @@
 
 .immersion-section .content .wrapper-immersion .images .razer-nari-logo {
   margin-top: 30px;
+  margin-right: -32px;
   display: none;
-  height: 130px !important;
+  height: 130px;
 }
 
 @media only screen and (min-width: 600px) {
-  .text {
-    max-width: 520px !important;
-  }
-  .immersion-title {
-    font-size: 34px !important;
-  }
-  .immersion-content {
-    font-size: 14px !important;
-    line-height: 25px !important;
-  }
-  .thx-logo,
-  .chroma-logo {
-    height: 90px !important;
-  }
   .immersion-section {
     height: 500px;
-    background-image: url(../assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset-CL.jpg) !important;
+    background-image: url(../assets/Desktop/JPG/razer-nari-hero-desktop-wireless-gaming-headset-CL.jpg);
+  }
+  .immersion-section .content .wrapper-immersion .text {
+    max-width: 520px;
+  }
+  .immersion-section .content .wrapper-immersion .text .immersion-title {
+    font-size: 34px;
+  }
+  .immersion-section .content .wrapper-immersion .text .immersion-content {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .immersion-section .content .wrapper-immersion .images > div .thx-logo,
+  .immersion-section .content .wrapper-immersion .images > div .chroma-logo {
+    height: 90px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .immersion-section .immersion-title {
-    font-size: 36px !important;
-  }
-  .immersion-section .immersion-content {
-    font-size: 14px !important;
-    line-height: 25px !important;
-  }
-  .immersion-section .razer-nari-logo {
-    display: block !important;
-    margin-right: -32px;
-  }
   .immersion-section .content {
-    padding: 0 20px !important;
+    padding: 20px;
   }
   .immersion-section .content .wrapper-immersion {
     margin-top: 20px;
   }
-}
-
-@media only screen and (min-width: 992px) {
-  .immersion-section {
-    height: 500px !important;
+  .immersion-section .content .wrapper-immersion .text .immersion-title {
+    font-size: 36px;
+  }
+  .immersion-section .content .wrapper-immersion .text .immersion-content {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .immersion-section .content .wrapper-immersion .images > div .thx-logo,
+  .immersion-section .content .wrapper-immersion .images > div .chroma-logo {
+    height: 90px;
+  }
+  .immersion-section .content .wrapper-immersion .images .razer-nari-logo {
+    display: block;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .immersion-section {
-    height: 600px !important;
+    height: 600px;
   }
 }
 
