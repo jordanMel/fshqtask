@@ -15,17 +15,13 @@
 }
 
 .fw-900 {
-  font-weight: 900 !important;
+  font-weight: 900;
 }
 
 .subheader {
   color: $accent;
   font-weight: 700;
   font-size: 1.4em;
-
-  @media only screen and (max-width: 600px) {
-    font-size: 1em !important;
-  }
 }
 
 .display-none {
@@ -34,4 +30,9 @@
 
 .relative {
   position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .subheader {
+    font-size: 1em;
+  }
 }

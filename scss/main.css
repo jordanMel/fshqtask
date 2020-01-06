@@ -632,7 +632,7 @@
 }
 
 .fw-900 {
-  font-weight: 900 !important;
+  font-weight: 900;
 }
 
 .subheader {
@@ -641,18 +641,18 @@
   font-size: 1.4em;
 }
 
-@media only screen and (max-width: 600px) {
-  .subheader {
-    font-size: 1em !important;
-  }
-}
-
 .display-none {
   display: none;
 }
 
 .relative {
   position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .subheader {
+    font-size: 1em;
+  }
 }
 
 .bg-black {
