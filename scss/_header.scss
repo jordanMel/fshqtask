@@ -355,9 +355,13 @@
   .menu-titles {
     display: none !important;
   }
+  .navigation-bar {
+    display: flex;
+  }
 
   .navbarwrapper {
     display: block;
+    margin-left: 0 !important;
   }
   .logo {
     height: auto;
@@ -368,9 +372,7 @@
   .logo-img-mobile {
     display: none !important;
   }
-  .menu-mobile {
-    display: none;
-  }
+  .menu-mobile,
   .menu-iconbtn {
     display: none;
   }

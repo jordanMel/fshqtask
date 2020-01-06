@@ -22,7 +22,6 @@ function onClickMenuBtn() {
         for (let element of menu_titles) {
             element.style.display = 'none';
         }
-
     }
 
     menu_close = !menu_close;
@@ -48,6 +47,9 @@ document.getElementById('headset-link').onclick = function () {
     document.getElementById('title-products').style.display = 'none';
     document.getElementById('title-headset').style.display = 'block';
 }
+
+document.getElementById('headset-link').onmouseover = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Green Drop Down copy.svg') }
+document.getElementById('headset-link').onmouseout = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Gray Drop Down.svg') }
 
 document.getElementById('title-headset').onclick = function () {
     document.getElementById('title-headset').style.display = 'none';
