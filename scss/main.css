@@ -392,10 +392,6 @@
   color: #00ff00;
 }
 
-.headset-link-wrapper:hover .headset-menu {
-  display: block;
-}
-
 .menu-titles {
   display: none;
   margin: 0 20px;
@@ -548,6 +544,9 @@
   .header {
     height: 50px !important;
   }
+  .headset-link-wrapper:hover .headset-menu {
+    display: block;
+  }
   .menu-titles {
     display: none !important;
   }
@@ -556,9 +555,12 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .navbarwrapper,
+  .headset-menu {
+    margin-left: 0 !important;
+  }
   .navbarwrapper {
     display: block;
-    margin-left: 0 !important;
   }
   .logo {
     height: auto;
