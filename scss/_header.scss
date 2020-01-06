@@ -19,6 +19,7 @@
   display: none;
   overflow: hidden;
   padding-right: 20px;
+
   a {
     letter-spacing: 1.2px;
     float: left;
@@ -35,6 +36,7 @@
   float: left;
   width: 120px;
   overflow: hidden;
+
   &:hover {
     .dropdown-content {
       display: block;
@@ -140,7 +142,6 @@
   padding: 8px 0px;
 
   button {
-    // width: 130px;
     padding: 0px 30px;
     outline: none;
     color: $headerColor;
@@ -151,7 +152,6 @@
     cursor: pointer;
     font-size: .6em;
     letter-spacing: 1px;
-    // font-weight: 900;
     user-select: none;
     &:active {
       background-color: darken($accent, $amount: 10%) !important;
@@ -192,11 +192,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-
-  // .menu-icon {
-  //   display: block;
-  // }
-
   .logo-img {
     display: none;
   }
@@ -216,7 +211,6 @@
   .logo-img-mobile {
     display: none;
   }
-
 
   .menu-mobile {
     display: none;

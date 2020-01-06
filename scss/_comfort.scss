@@ -7,14 +7,15 @@
 
   .top {
     max-width: 750px;
-
     margin: 0 auto;
     padding: 0 30px;
     text-align: center;
+
     h5 {
       margin-top: 70px;
       color: $accent;
     }
+
     p {
       margin-top: 25px;
       line-height: 30px;
@@ -37,19 +38,23 @@
       width: 350px;
       padding: 30px;
       color: white;
+
       h3 {
         font-size: 1em;
         margin-top: 15px;
         text-transform: uppercase;
       }
+
       p {
         margin-top: 10px;
         font-size: 0.9em;
         color: rgba($gray, $alpha: 0.7);
       }
+
       img {
         height: 40px;
       }
+      
     }
   }
 }

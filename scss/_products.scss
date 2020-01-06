@@ -1,11 +1,10 @@
 @import "variables";
 
 .card {
+  border-bottom: 3px solid $accent !important;
   .card-text {
     min-height: 38px;
   }
-
-  border-bottom: 3px solid $accent !important;
 
   .btn {
     &:focus,
@@ -36,10 +35,12 @@
     font-weight: 800;
     background-color: $accent !important;
     cursor: pointer;
+
     &:active {
       background-color: darken($accent, $amount: 10%) !important;
     }
   }
+  
   .chroma-img {
     bottom: 0;
     right: 0;

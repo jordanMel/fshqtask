@@ -1,7 +1,6 @@
 @import "variables";
 @import "mixins";
 
-
 .menu-mobile {
   width: 100%;
   margin-left: 100%;
@@ -28,6 +27,7 @@
       padding: 0px 20px;
       height: 100%;
       user-select: none;
+
       i {
         font-size: 25px;
       }
@@ -80,9 +80,11 @@
         margin: 0 auto;
         font-size: 16px;
         color: $bgColorBlack;
+
         &:focus {
           color: $bgColorBlack;
         }
+
         &:active {
           background-color: rgba($accent, 0.8);
         }
@@ -91,7 +93,6 @@
 
     .icon-forward-mobile {
       padding: 0;
-      // background-color: red;
       height: 50px;
       margin-right: 8px;
     }

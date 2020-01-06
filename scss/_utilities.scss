@@ -24,16 +24,14 @@
   font-size: 1.4em;
 
   @media only screen and (max-width: 600px) {
-      font-size: 1em !important;
+    font-size: 1em !important;
   }
-
 }
 
 .display-none {
-    display: none;
-  }
-  
+  display: none;
+}
 
-  .relative {
-    position: relative;
-  }
+.relative {
+  position: relative;
+}
