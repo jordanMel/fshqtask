@@ -525,6 +525,11 @@
     border-radius: 28px;
     font-size: 14px;
   }
+  .navbarwrapper .icon-forward {
+    position: absolute;
+    height: 50px;
+    right: 0;
+  }
   .headset-menu {
     display: block;
     position: fixed;

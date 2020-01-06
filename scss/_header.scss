@@ -49,6 +49,7 @@
   p {
     margin: 0;
   }
+
   .drop-icon {
     height: 40px;
     position: absolute;
@@ -164,6 +165,7 @@
     font-size: 0.6em;
     letter-spacing: 1px;
     user-select: none;
+
     &:active {
       background-color: darken($accent, $amount: 10%);
     }
@@ -200,6 +202,7 @@
   letter-spacing: 0.5px;
   font-weight: 700;
   font-size: 18px;
+
   img {
     height: 40px;
     width: 40px;
@@ -207,6 +210,7 @@
     margin-top: -3px;
     transform: rotate(90deg);
   }
+
   span {
     margin-left: -10px;
   }
@@ -230,13 +234,16 @@
   .logo-img {
     display: none;
   }
+
   .logo-img-mobile {
     display: block;
   }
+
   .header {
     height: 50px;
     overflow: hidden;
   }
+
   .navigation-bar {
     display: block;
     width: 100%;
@@ -255,6 +262,7 @@
     padding-top: 10px;
     transition: margin-left 300ms;
     overflow-y: auto;
+
     a {
       &:hover {
         color: $accent;
@@ -264,11 +272,9 @@
     .dropdownwrapper {
       float: none;
       width: 100%;
-      // padding-left: 20px;
     }
 
     a {
-      // background-color: red;
       float: none;
       padding-left: 20px;
       width: 100%;
@@ -323,6 +329,12 @@
         font-size: 14px;
       }
     }
+
+    .icon-forward {
+      position: absolute;
+      height: 50px;
+      right: 0;
+    }
   }
 
   .headset-menu {
@@ -343,6 +355,7 @@
   .header {
     height: 50px !important;
   }
+
   .headset-link-wrapper {
     &:hover {
       .headset-menu {
@@ -354,9 +367,11 @@
   .menu-titles {
     display: none !important;
   }
+
   .navigation-bar {
     display: flex;
   }
+
   .navbarwrapper,
   .headset-menu {
     margin-left: 0 !important;
@@ -365,15 +380,19 @@
   .navbarwrapper {
     display: block;
   }
+
   .logo {
     height: auto;
   }
+
   .logo-img {
     display: block;
   }
+
   .logo-img-mobile {
     display: none !important;
   }
+
   .menu-mobile,
   .menu-iconbtn {
     display: none;

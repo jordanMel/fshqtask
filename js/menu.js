@@ -1,5 +1,7 @@
 var menu_close = true;
 
+
+
 function onClickMenuBtn() {
 
     var menu_titles = document.getElementsByClassName('menu-titles');
