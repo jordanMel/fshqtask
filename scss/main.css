@@ -1136,7 +1136,7 @@ footer .top-footer .footer-container .form-container textarea {
 
 footer .top-footer .footer-container .form-container input,
 footer .top-footer .footer-container .form-container textarea {
-  width: 100% !important;
+  width: 100%;
   padding: 10px 10px;
   color: #978e8e;
   border: 1px solid #978e8e;
@@ -1176,18 +1176,18 @@ footer .top-footer .footer-container .form-container textarea::placeholder {
 
 footer .top-footer .footer-container .form-container button {
   padding: 13px 60px;
-  border-radius: 20px !important;
+  border-radius: 20px;
   border: none;
   font-size: 0.6em;
-  letter-spacing: 0.5px !important;
+  letter-spacing: 0.5px;
   color: black;
   outline: none;
   font-weight: 800;
-  background-color: #00ff00 !important;
+  background-color: #00ff00;
 }
 
 footer .top-footer .footer-container .form-container button:active {
-  background-color: #006600 !important;
+  background-color: #006600;
 }
 
 footer .top-footer .footer-container .information-container {
@@ -1225,7 +1225,7 @@ footer .top-footer .footer-container .information-container div h6 {
   color: white;
 }
 
-footer .wrapper {
+footer .bottom-wrapper {
   max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
@@ -1241,12 +1241,12 @@ footer .wrapper {
           flex-direction: column;
 }
 
-footer .wrapper .side .footer-logo {
+footer .bottom-wrapper .side .footer-logo {
   height: 22px;
   margin: 50px 0;
 }
 
-footer .wrapper .logo-images {
+footer .bottom-wrapper .logo-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1256,13 +1256,13 @@ footer .wrapper .logo-images {
   text-align: left;
 }
 
-footer .wrapper .logo-images img {
+footer .bottom-wrapper .logo-images img {
   padding: 10px 15px;
   margin-left: -10px;
   cursor: pointer;
 }
 
-footer .wrapper .center {
+footer .bottom-wrapper .center {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1278,7 +1278,7 @@ footer .wrapper .center {
           flex-direction: column;
 }
 
-footer .wrapper .center p {
+footer .bottom-wrapper .center p {
   font-size: 0.8em;
   color: #978e8e;
   font-weight: 600;
@@ -1307,11 +1307,11 @@ footer .copyright .copyright-text {
   width: 372px;
 }
 
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .form-container {
-    -webkit-box-pack: end !important;
-        -ms-flex-pack: end !important;
-            justify-content: flex-end !important;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-bottom: 80px;
   }
   .footer-container {
@@ -1324,8 +1324,8 @@ footer .copyright .copyright-text {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .wrapper {
-    padding: 0 20px !important;
+  .bottom-wrapper {
+    padding: 0 20px;
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -1334,15 +1334,15 @@ footer .copyright .copyright-text {
         -ms-flex-align: center;
             align-items: center;
   }
-  .wrapper .side {
-    -webkit-box-flex: 3 !important;
-        -ms-flex: 3 !important;
-            flex: 3 !important;
+  .bottom-wrapper .side {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
   }
-  .wrapper .side .footer-logo {
-    margin: 30px 0 !important;
+  .bottom-wrapper .side .footer-logo {
+    margin: 30px 0;
   }
-  .wrapper .center {
+  .bottom-wrapper .center {
     -webkit-box-flex: 6 !important;
         -ms-flex: 6 !important;
             flex: 6 !important;
@@ -1354,16 +1354,16 @@ footer .copyright .copyright-text {
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
-  .wrapper .center p {
+  .bottom-wrapper .center p {
     margin-bottom: 0;
   }
-  .wrapper .logo-images {
+  .logo-images {
     height: 37px;
     -webkit-box-pack: end !important;
         -ms-flex-pack: end !important;
             justify-content: flex-end !important;
   }
-  .wrapper .logo-images img {
+  .logo-images img {
     margin: 10px !important;
     padding: 0 !important;
   }

@@ -27,7 +27,7 @@ footer {
         }
 
         .subheader {
-          grid-column: 1/3 ;
+          grid-column: 1/3;
         }
 
         .name-field {
@@ -53,7 +53,7 @@ footer {
 
         input,
         textarea {
-          width: 100% !important;
+          width: 100%;
           padding: 10px 10px;
           color: $gray;
           border: 1px solid $gray;
@@ -71,17 +71,17 @@ footer {
 
         button {
           padding: 13px 60px;
-          border-radius: 20px !important;
+          border-radius: 20px;
           border: none;
           font-size: 0.6em;
-          letter-spacing: 0.5px !important;
+          letter-spacing: 0.5px;
           color: black;
           outline: none;
           font-weight: 800;
-          background-color: $accent !important;
+          background-color: $accent;
 
           &:active {
-            background-color: darken($accent, $amount: 30%) !important;
+            background-color: darken($accent, $amount: 30%);
           }
         }
       }
@@ -117,7 +117,7 @@ footer {
     }
   }
 
-  .wrapper {
+  .bottom-wrapper {
     @include layout();
     padding: 0 30px;
     height: 100%;
@@ -148,7 +148,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      
+
       p {
         font-size: 0.8em;
         color: $gray;
@@ -175,9 +175,9 @@ footer {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .form-container {
-    justify-content: flex-end !important;
+    justify-content: flex-end;
     margin-bottom: 80px;
   }
 
@@ -189,36 +189,36 @@ footer {
     }
   }
 
-  .wrapper {
-    padding: 0 20px !important;
+  .bottom-wrapper {
+    padding: 0 20px;
     flex-direction: row !important;
     align-items: center;
 
     .side {
-      flex: 3 !important;
+      flex: 3;
 
       .footer-logo {
-        margin: 30px 0 !important;
+        margin: 30px 0;
       }
     }
     .center {
-      flex: 6 !important    ;
+      flex: 6 !important;
       align-items: center;
       flex-direction: row !important;
-      
+
       p {
         margin-bottom: 0;
       }
     }
+  }
 
-    .logo-images {
-      height: 37px;
-      justify-content: flex-end !important;
+  .logo-images {
+    height: 37px;
+    justify-content: flex-end !important;
 
-      img {
-        margin: 10px !important;
-        padding: 0 !important;
-      }
+    img {
+      margin: 10px !important;
+      padding: 0 !important;
     }
   }
 }
