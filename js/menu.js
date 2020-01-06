@@ -1,53 +1,59 @@
-// const menu_mobile = document.getElementById('menu-mobile');
+var menu_close = true;
 
-// function onClickMenuBtn() {
-//   menu_mobile.style.marginLeft = '0';
-// }
+function onClickMenuBtn() {
 
-// function CloseMenu(element) {
-//   element.style.marginLeft = '100%';
-// }
+    var menu_titles = document.getElementsByClassName('menu-titles');
 
+    if (menu_close) {
+        document.getElementsByClassName('navbarwrapper')[0].style.marginLeft = '0';
+        document.getElementById('menu-icon').style.display = 'none';
+        document.getElementById('close-icon').style.display = 'block';
+        document.getElementById('logo-img-mobile').style.display = 'none';
+        document.getElementById('title-menu').style.display = 'block';
 
-// function CloseAllMenu() {
-//   document.getElementById('menu-mobile').style.marginLeft = '100%';
-//   document.getElementById('menu-mobile-products').style.marginLeft = '100%';
-//   document.getElementById('menu-mobile-headset').style.marginLeft = '100%';
-// }
+    } else {
+        document.getElementsByClassName('navbarwrapper')[0].style.marginLeft = '100%';
+        document.getElementById('close-icon').style.display = 'none';
+        document.getElementById('menu-icon').style.display = 'block';
+        document.getElementById('logo-img-mobile').style.display = 'block';
+        document.getElementsByClassName('headset-menu')[0].style.marginLeft = '100%';
+        document.getElementsByClassName('dropdown-content')[0].style.marginLeft = '100%';
 
+        for (let element of menu_titles) {
+            element.style.display = 'none';
+        }
 
+    }
 
-// document.getElementById('headset-link').onmouseover = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Green Drop Down copy.svg') }
-// document.getElementById('headset-link').onmouseout = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Gray Drop Down.svg') }
+    menu_close = !menu_close;
 
-// document.getElementById('products-link').onfocus = function () { changeIcon(true, 'icon-forward-products', 'icon-forward-products-active') };
-// document.getElementById('products-link').onblur = function () { changeIcon(false, 'icon-forward-products', 'icon-forward-products-active') };
+}
 
-// document.getElementById('headset-linkbtn').onfocus = function () { changeIcon(true, 'icon-forward-headset', 'icon-forward-headset-active') };
-// document.getElementById('headset-linkbtn').onblur = function () { changeIcon(false, 'icon-forward-headset', 'icon-forward-headset-active') };
+function onclickProductsBtn() {
+    var dropContent = document.getElementsByClassName('dropdown-content');
 
+    document.getElementById('title-menu').style.display = 'none';
+    document.getElementById('title-products').style.display = 'block';
+    dropContent[0].style.marginLeft = '0';
+}
 
+document.getElementById('title-products').onclick = function () {
+    document.getElementById('title-products').style.display = 'none';
+    document.getElementById('title-menu').style.display = 'block';
+    document.getElementsByClassName('dropdown-content')[0].style.marginLeft = '100%';
+}
 
+document.getElementById('headset-link').onclick = function () {
+    document.getElementsByClassName('headset-menu')[0].style.marginLeft = '0';
+    document.getElementById('title-products').style.display = 'none';
+    document.getElementById('title-headset').style.display = 'block';
+}
 
-// function changeIcon(active, img_default, img_active) {
-//   document.getElementById(img_default).style.display = active ? 'none' : 'block';
-//   document.getElementById(img_active).style.display = active ? 'block' : 'none';
-// }
-
-// function showProductsMenu() {
-//   console.log('click');
-//   document.getElementById('menu-mobile-products').style.marginLeft = '0';
-//   document.getElementById('menu-mobile-products').style.marginLeft = '0';
-// }
-
-
-// // menu open
-// document.getElementById('headset-linkbtn').onclick = function () {
-//   document.getElementById('menu-mobile-headset').style.marginLeft = '0';
-// };
-
-
-
+document.getElementById('title-headset').onclick = function () {
+    document.getElementById('title-headset').style.display = 'none';
+    document.getElementById('title-products').style.display = 'block';
+    document.getElementsByClassName('headset-menu')[0].style.marginLeft = '100%';
+}
 
 
 

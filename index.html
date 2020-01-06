@@ -11,9 +11,6 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="scss/main.css" />
-
-
-
 </head>
 
 <body id="docu-body">
@@ -22,13 +19,22 @@
     <div class="navigation-bar">
       <div id="logo" class="logo">
         <img class="logo-img" src="assets/Desktop/SVG/wordmark.svg" alt="logo" />
-        <img class="logo-img-mobile" src="assets/Mobile/assets/Mobile/logo.png" alt="logo" />
+        <img id="logo-img-mobile" class="logo-img-mobile" src="assets/Mobile/assets/Mobile/logo.png" alt="logo" />
+        <h5 id="title-menu" class="menu-titles">MENU</h5>
+        <div id="title-products" class="menu-titles">
+          <img id="drop-icon2" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+          <span>PRODUCTS</span>
+        </div>
+        <div id="title-headset" class="menu-titles">
+          <img id="drop-icon3" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+          <span>HEADSET & AUDIO</span>
+        </div>
       </div>
       <div class="navbarwrapper">
         <div id="dropdown" class="dropdownwrapper">
           <div class="relative">
-            <button class="dropbtn">
-              PRODUCTS
+            <button class="dropbtn" onclick="onclickProductsBtn()">
+              <p>PRODUCTS</p>
               <img id="drop-icon" class="drop-icon" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
             </button>
           </div>
@@ -56,8 +62,10 @@
           <button>BUY NOW</button>
         </div>
       </div>
-      <div class="menu-iconbtn" onclick="onClickMenuBtn()">
+      <div id="menu-icon-btn" class="menu-iconbtn" onclick="onClickMenuBtn()">
         <img id="menu-icon" class="menu-icon" src="assets/Mobile/assets/Mobile/1.png" alt="icon" />
+        <span id="close-icon" class="close-icon">&times;</span>
+
       </div>
     </div>
   </section>

@@ -166,6 +166,8 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  -webkit-transition: height 300ms;
+  transition: height 300ms;
 }
 
 .navigation-bar {
@@ -213,6 +215,10 @@
 
 .dropdownwrapper:hover .dropdown-content {
   display: block;
+}
+
+.dropbtn p {
+  margin: 0;
 }
 
 .dropbtn .drop-icon {
@@ -292,10 +298,17 @@
           justify-content: center;
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 
 .menu-icon {
   height: 14px;
+}
+
+.close-icon {
+  display: none;
+  font-size: 45px !important;
+  color: #978e8e;
 }
 
 .logo {
@@ -368,8 +381,8 @@
 .headset-menu {
   display: none;
   position: absolute;
-  left: 100%;
   top: 0;
+  left: 100%;
   background-color: #000000;
   width: 220px;
   border: 1px solid #0f0f0f;
@@ -383,24 +396,172 @@
   display: block;
 }
 
+.menu-titles {
+  display: none;
+  margin: 0 20px;
+  color: #978e8e;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.menu-titles img {
+  height: 40px;
+  width: 40px;
+  margin-left: -15px;
+  margin-top: -3px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu-titles span {
+  margin-left: -10px;
+}
+
 @media only screen and (max-width: 767px) {
+  .logo {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-iconbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .logo-img {
     display: none;
   }
   .logo-img-mobile {
     display: block;
+  }
+  .header {
+    height: 50px;
+    overflow: hidden;
+  }
+  .navigation-bar {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .navbarwrapper {
+    display: block;
+    position: fixed;
+    margin-left: 100%;
+    top: 50px;
+    bottom: 0;
+    background-color: #0f0f0f;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    -webkit-transition: margin-left 300ms;
+    transition: margin-left 300ms;
+    overflow-y: auto;
+  }
+  .navbarwrapper a:hover {
+    color: #00ff00;
+  }
+  .navbarwrapper .dropdownwrapper {
+    float: none;
+    width: 100%;
+  }
+  .navbarwrapper a {
+    float: none;
+    padding-left: 20px;
+    width: 100%;
+  }
+  .navbarwrapper a,
+  .navbarwrapper .dropbtn {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  .navbarwrapper .dropdownwrapper div button {
+    padding: 0;
+    width: 100%;
+  }
+  .navbarwrapper .dropdownwrapper div button p {
+    padding-left: 20px;
+  }
+  .navbarwrapper .dropdownwrapper div button .drop-icon {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    top: 0;
+    height: 50px;
+  }
+  .navbarwrapper .dropdownwrapper .dropdown-content {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    margin-left: 100%;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    border: none;
+    background-color: #0f0f0f;
+    -webkit-transition: margin-left 300ms;
+    transition: margin-left 300ms;
+    overflow-y: auto;
+  }
+  .navbarwrapper .buybtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .navbarwrapper .buybtn button {
+    height: 56px;
+    width: 100%;
+    margin: 50px 20px;
+    border-radius: 28px;
+    font-size: 14px;
+  }
+  .headset-menu {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #0f0f0f;
+    margin-left: 100%;
+    top: 50px;
+    left: 0;
+    -webkit-transition: margin-left 300ms;
+    transition: margin-left 300ms;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    height: 50px !important;
+  }
+  .menu-titles {
+    display: none !important;
+  }
   .navbarwrapper {
     display: block;
+  }
+  .logo {
+    height: auto;
   }
   .logo-img {
     display: block;
   }
   .logo-img-mobile {
-    display: none;
+    display: none !important;
   }
   .menu-mobile {
     display: none;

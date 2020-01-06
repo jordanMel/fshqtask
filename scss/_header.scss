@@ -5,6 +5,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: height 300ms;
 }
 
 .navigation-bar {
@@ -45,6 +46,9 @@
 }
 
 .dropbtn {
+  p {
+    margin: 0;
+  }
   .drop-icon {
     height: 40px;
     position: absolute;
@@ -106,10 +110,17 @@
   @include flexCenter();
   height: 50px;
   width: 50px;
+  cursor: pointer;
 }
 
 .menu-icon {
   height: 14px;
+}
+
+.close-icon {
+  display: none;
+  font-size: 45px !important;
+  color: $gray;
 }
 
 .logo {
@@ -171,8 +182,8 @@
 .headset-menu {
   display: none;
   position: absolute;
-  left: 100%;
   top: 0;
+  left: 100%;
   background-color: $bgColorBlack;
   width: 220px;
   border: 1px solid $headerColor;
@@ -190,27 +201,173 @@
   }
 }
 
+.menu-titles {
+  display: none;
+  margin: 0 20px;
+  color: $gray;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 18px;
+  img {
+    height: 40px;
+    width: 40px;
+    margin-left: -15px;
+    margin-top: -3px;
+    transform: rotate(90deg);
+  }
+  span {
+    margin-left: -10px;
+  }
+}
+
+// mobile
+
 @media only screen and (max-width: 767px) {
+  .logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-iconbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
   .logo-img {
     display: none;
   }
   .logo-img-mobile {
     display: block;
+  }
+  .header {
+    height: 50px;
+    overflow: hidden;
+  }
+  .navigation-bar {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbarwrapper {
+    display: block;
+    position: fixed;
+    margin-left: 100%;
+    top: 50px;
+    bottom: 0;
+    background-color: $headerColor;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    transition: margin-left 300ms;
+    overflow-y: auto;
+    a {
+      &:hover {
+        color: $accent;
+      }
+    }
+
+    .dropdownwrapper {
+      float: none;
+      width: 100%;
+      // padding-left: 20px;
+    }
+
+    a {
+      // background-color: red;
+      float: none;
+      padding-left: 20px;
+      width: 100%;
+    }
+
+    a,
+    .dropbtn {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .dropdownwrapper div button {
+      padding: 0;
+      width: 100%;
+      p {
+        padding-left: 20px;
+      }
+      .drop-icon {
+        transform: rotate(-90deg);
+        top: 0;
+        height: 50px;
+      }
+    }
+
+    .dropdownwrapper .dropdown-content {
+      display: block;
+      width: 100%;
+      padding-top: 10px;
+      margin-left: 100%;
+      position: fixed;
+      top: 50px;
+      bottom: 0;
+      border: none;
+      background-color: $headerColor;
+      transition: margin-left 300ms;
+      overflow-y: auto;
+    }
+
+    .buybtn {
+      @include flexCenter();
+      height: auto;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      button {
+        height: 56px;
+        width: 100%;
+        margin: 50px 20px;
+        border-radius: 28px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .headset-menu {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    background-color: $headerColor;
+    margin-left: 100%;
+    top: 50px;
+    left: 0;
+    transition: margin-left 300ms;
   }
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    height: 50px !important;
+  }
+
+  .menu-titles {
+    display: none !important;
+  }
+
   .navbarwrapper {
     display: block;
   }
-
+  .logo {
+    height: auto;
+  }
   .logo-img {
     display: block;
   }
   .logo-img-mobile {
-    display: none;
+    display: none !important;
   }
-
   .menu-mobile {
     display: none;
   }
