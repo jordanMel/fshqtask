@@ -10,7 +10,6 @@ window.onresize = function () {
 window.onload = function () {
     this.initSwiper();
     this.togglebtndisplay();
-    // this.initmyslides();
 }
 
 
@@ -80,7 +79,7 @@ function initmyslides() {
 
 
     for (i = 1; i < 13; i++) {
-        console.log(i);
+        // console.log(i);
         var slide = document.createElement('div');
         var innderdiv = document.createElement('div');
 
@@ -148,7 +147,7 @@ function reloadSwiperOnResize() {
 
 
 function togglebtndisplay() {
-    console.log(document.getElementsByClassName('previewfull'));
+    // console.log(document.getElementsByClassName('previewfull'));
     var prevbtns = document.getElementsByClassName('previewfull');
 
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;

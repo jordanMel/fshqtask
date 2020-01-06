@@ -8,56 +8,47 @@
   <title>Document</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="scss/main.css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
   <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-  <link rel="stylesheet" href="scss/main.css" />
 </head>
 
 <body id="docu-body">
 
   <section id="header" class="header">
     <div class="navigation-bar">
-
       <div id="logo" class="logo">
         <img class="logo-img" src="assets/Desktop/SVG/wordmark.svg" alt="logo" />
         <img class="logo-img-mobile" src="assets/Mobile/assets/Mobile/logo.png" alt="logo" />
       </div>
-
-
       <div class="navbarwrapper">
         <div id="dropdown" class="dropdownwrapper">
-          <div style="position: relative;">
+          <div class="relative">
             <button class="dropbtn">
               PRODUCTS
               <img id="drop-icon" class="drop-icon" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
             </button>
           </div>
-
           <div class="dropdown-content">
             <a href="#">LAPTOPS</a>
             <a href="#">MOBILES</a>
             <a href="#">MOUSES & MATS</a>
             <a href="#">KEYBOARDS</a>
-            <div id="headset-link" class="headset-link-wrapper" style="position: relative;">
+            <div id="headset-link" class="headset-link-wrapper relative">
               <a href="#" class="headsetAudio">HEADSET & AUDIO
-                <img id="icon-forward" class="icon-forward" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="" /></a>
-
+                <img id="icon-forward" class="icon-forward" src="assets/Desktop/SVG/Gray Drop Down.svg" alt="icon" />
+              </a>
               <div class="headset-menu">
                 <a href="#">WIRELESS</a>
                 <a href="#">WIRED</a>
               </div>
             </div>
-
             <a href="#">CONSOLE</a>
           </div>
         </div>
@@ -68,15 +59,13 @@
           <button>BUY NOW</button>
         </div>
       </div>
-
       <div class="menu-iconbtn" onclick="onClickMenuBtn()">
         <img id="menu-icon" class="menu-icon" src="assets/Mobile/assets/Mobile/1.png" alt="icon" />
       </div>
-
     </div>
   </section>
 
-
+  <!-- 
   <div id="menu-mobile" class="menu-mobile">
     <div class="menu-bar">
       <h5 class="m-0 fw-600">MENU</h5>
@@ -102,7 +91,7 @@
     </div>
   </div>
 
-  <!-- products menu -->
+
   <div id="menu-mobile-products" class="menu-mobile">
     <div class="menu-bar">
       <div class="products-title" onclick="CloseMenu(document.getElementById('menu-mobile-products'))">
@@ -128,7 +117,7 @@
     </div>
   </div>
 
-  <!-- headset menu -->
+ 
   <div id="menu-mobile-headset" class="menu-mobile">
     <div class="menu-bar">
       <div class="products-title" onclick="CloseMenu(document.getElementById('menu-mobile-headset'))">
@@ -143,12 +132,10 @@
       <button>WIRED</button>
       <button>WIRELESS</button>
     </div>
-  </div>
+  </div> -->
 
 
-  <div id="page-body" style="margin-top: 50px;" class="page-body">
-
-
+  <div id="page-body" class="page-body">
     <section class="immersion-section">
       <div class="content">
         <div class="wrapper-immersion">
@@ -166,16 +153,15 @@
           </div>
           <div class="images">
             <div>
-              <img class="thx-logo" src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
-              <img class="chroma-logo" src="assets/Desktop/PNG/razer-nari-chroma-logo.png" alt="">
+              <img class="thx-logo" src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="thx-logo">
+              <img class="chroma-logo" src="assets/Desktop/PNG/razer-nari-chroma-logo.png" alt="chroma-logo">
             </div>
-            <img class="razer-nari-logo" style="margin-top: 30px;" src="assets/Desktop/SVG/razer-nari-logo.svg" alt="">
+            <img class="razer-nari-logo" style="margin-top: 30px;" src="assets/Desktop/SVG/razer-nari-logo.svg"
+              alt="razer-nari-logo">
           </div>
         </div>
       </div>
     </section>
-
-
 
     <section class="comfort-section">
       <div class="top">
@@ -185,62 +171,55 @@
       </div>
       <div class="features">
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg" alt="cooling-gel-img">
           <h3>Cooling Gel-Infused Cushions</h3>
           <p>Reduces Heat Build-up during intense gaming sessions</p>
 
         </div>
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-Auto-Adjusting-Headband-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-Auto-Adjusting-Headband-icon.svg" alt="auto-adjust-img">
           <h3>Auto-Adjusting Headband</h3>
           <p>Maximum adjustability to fit seamlessly onto any head size</p>
         </div>
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-Swiveling-Earcups-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-Swiveling-Earcups-icon.svg" alt="swiwel-img">
           <h3>Swiveling Earcups</h3>
           <p>Adapting to the shape and position of your ears</p>
         </div>
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-Game-Chat-Balance-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-Game-Chat-Balance-icon.svg" alt="game-chat-img">
           <h3>Game/Chat Balance</h3>
           <p>Fine-tune between game and chat volume for the perfect mix that lets you enjoy immersive sound without
             interrupting team communication</p>
         </div>
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-Wireless-Audio-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-Wireless-Audio-icon.svg" alt="wireless-img">
           <h3>2.4GHZ Wireless Audio</h3>
           <p>Get lag-free, high-fidelity gaming audio with a wireless range of up to 12 meters smoothly without
             disconnection.</p>
         </div>
         <div>
-          <img src="assets/Desktop/SVG/razer-nari-35-mm-Wired-Mode-icon.svg" alt="">
+          <img src="assets/Desktop/SVG/razer-nari-35-mm-Wired-Mode-icon.svg" alt="wired-img">
           <h3>Wired Mode</h3>
           <p>Get seamlessly cross-platform compatibility via a 3.5mm audio jack in wired mode. Enjoy high quality stereo
             sound whether you're playing on PC</p>
         </div>
       </div>
       <div class="hr"></div>
-
     </section>
 
-
     <section id="img-products-section" class="img-products-section">
-
       <h5 class="subheader text-center mb-4">PRODUCT IMAGES</h5>
-
       <div id="pop-up" class="pop-up">
         <div id="close">&times;</div>
-        <img id="img-full" src="" alt="">
+        <img id="img-full" src="" alt="full-screen-img">
       </div>
       <div id="swiper-container" class="swiper-container">
         <div id="swiper-wrapper" class="swiper-wrapper">
         </div>
-        <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
-
 
     <section id="thx" class="thx-section fade-scroll">
       <div class="content">
@@ -250,38 +229,38 @@
             With
             the Nari Ultimate, you can now react to any in-game movement, even if it's coming from above or beneath you,
             giving you heightened senses during your game. Unleash your predatory instincts with sound as a weapon.</p>
-          <img src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="">
+          <img src="assets/Desktop/PNG/razer-nari-thx-logo.png" alt="thx-logo">
         </div>
       </div>
     </section>
 
     <section class="products-section">
       <div class="container-md">
-        <div class="row  justify-content-center font-weight-bolder">
-          <h5 class="subheader  my-5 my-md-5 pt-4 text-center  ">EXPLORE OTHER PRODUCTS</h5>
+        <div class="row justify-content-center font-weight-bolder">
+          <h5 class="subheader my-5 my-md-5 pt-4 text-center">EXPLORE OTHER PRODUCTS</h5>
         </div>
         <div class="row">
 
-          <div class="col-lg-3 col-sm-6 px-2 pb-3 ">
-            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+          <div class="col-lg-3 col-sm-6 px-2 pb-3">
+            <div class="card mx-md-3 mb-4 mx-lg-0 border-0 rounded-0 bg-black">
               <div class="position-relative">
                 <img class="card-img-top d-none d-sm-block" src="assets/Desktop/PNG/Nari-Ultimate-Base.png"
                   alt="Card image cap">
                 <img class="card-img-top d-block d-sm-none" src="assets/Mobile/assets/Mobile/7.jpg"
                   alt="Card image cap">
-                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                <img class="chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
                   alt="chroma-logo">
               </div>
-              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+              <div class="card-body card-bgColor pt-3 pb-3 px-3">
                 <p class="text-white fs-xs font-weight-bold mb-1">RAZER NARI ULTIMATE</p>
                 <p class="card-text text-secondary mb-3  fs-xs">Wireless Gaming Headset with Razer HyperSense</p>
-                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+                <button class="btn fs-xs fw-600 border-0 p-0  accent">LEARN MORE</button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 px-2 pb-3 ">
-            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+          <div class="col-lg-3 col-sm-6 px-2 pb-3">
+            <div class="card mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black">
               <div class="position-relative">
                 <img class="card-img-top d-none d-sm-block" src="assets/Desktop/PNG/Nari-Ultimate-Base.png"
                   alt="Card image cap">
@@ -290,68 +269,66 @@
                 <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
                   alt="chroma-logo">
               </div>
-              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+              <div class="card-body card-bgColor pt-3 pb-3 px-3">
                 <p class="text-white fs-xs font-weight-bold mb-1">RAZER NARI </p>
-                <p class="card-text text-secondary mb-3  fs-xs">Wired Gaming Headset with Razer HyperSense</p>
-                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+                <p class="card-text text-secondary mb-3 fs-xs">Wired Gaming Headset with Razer HyperSense</p>
+                <button class="btn fs-xs fw-600  border-0 p-0 accent">LEARN MORE</button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 px-2 pb-3 pb-lg-5  d-none d-sm-block">
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 pb-lg-5 d-none d-sm-block">
             <div class="card  mx-md-3 mb-4   mb-lg-5 mx-lg-0 border-0 rounded-0 bg-black ">
               <div class="position-relative">
                 <img class="card-img-top" src="assets/Desktop/PNG/BlackWidow-Elite-Base.png" alt="Card image cap">
-                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                <img class="chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
                   alt="chroma-logo">
               </div>
 
-              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+              <div class="card-body card-bgColor pt-3 pb-3 px-3">
                 <p class="text-white fs-xs font-weight-bold mb-1">RAZER MAMBA WIRELESS</p>
-                <p class="card-text text-secondary mb-3  fs-xs">Full Razer Chroma™ and Wireless Convenience</p>
-                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+                <p class="card-text text-secondary mb-3 fs-xs">Full Razer Chroma™ and Wireless Convenience</p>
+                <button class="btn fs-xs fw-600 border-0 p-0 accent">LEARN MORE</button>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6 px-2 pb-3 d-none d-sm-block ">
-            <div class="card  mx-md-3 mb-4  mx-lg-0 border-0 rounded-0 bg-black ">
+          <div class="col-lg-3 col-sm-6 px-2 pb-3 d-none d-sm-block">
+            <div class="card mx-md-3 mb-4 mx-lg-0 border-0 rounded-0 bg-black">
               <div class="position-relative">
                 <img class="card-img-top" src="assets/Desktop/PNG/Mamba-Wireless-Base.png" alt="Card image cap">
-                <img class=" chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
+                <img class="chroma-img position-absolute d-none d-sm-block" src="assets/Mobile/assets/Mobile/3.png"
                   alt="chroma-logo">
               </div>
 
-              <div class="card-body card-bgColor pt-3 pb-3 px-3 ">
+              <div class="card-body card-bgColor pt-3 pb-3 px-3">
                 <p class="text-white fs-xs font-weight-bold mb-1 text-truncate">RAZER BLACKKWIDOW ELITE</p>
-                <p class="card-text text-secondary mb-3  fs-xs ">The Complete Mechanical Gaming Keyboard
+                <p class="card-text text-secondary mb-3 fs-xs">The Complete Mechanical Gaming Keyboard
                 </p>
-                <button class="btn  fs-xs fw-600  border-0 p-0  accent">LEARN MORE</button>
+                <button class="btn fs-xs fw-600 border-0 p-0 accent">LEARN MORE</button>
               </div>
             </div>
           </div>
         </div>
         <div class="row display-block d-lg-none">
           <div class="col text-center">
-            <button class=" mt-md-4  view-products-btn ">VIEW ALL PRODUCTS</button>
+            <button class="mt-md-4 view-products-btn">VIEW ALL PRODUCTS</button>
           </div>
         </div>
       </div>
     </section>
 
-
     <footer>
-
       <div class="top-footer">
         <div class="footer-container">
           <div class="form-container">
-            <div style="max-width: 550px; width:100%;">
-
+            <div class="my-form">
 
 
               <form action="">
+
                 <h5 class="subheader">ASK A QUESTION</h5>
-                <div class="name-field" required>
+                <div class="name-field">
                   <input placeholder="NAME" type="text" required>
                 </div>
                 <div class="phone-field">
@@ -400,7 +377,7 @@
 
       <div class="wrapper">
         <div class="side">
-          <img class="footer-logo" src="assets/Desktop/SVG/wordmark.svg" alt="">
+          <img class="footer-logo" src="assets/Desktop/SVG/wordmark.svg" alt="footer-logo">
         </div>
         <div class="center">
           <p>PRODUCTS</p>
@@ -409,9 +386,9 @@
           <p>CONTACT US</p>
         </div>
         <div class="side logo-images">
-          <img src="assets/Mobile/assets/Mobile/twitter.png" alt="">
-          <img src="assets/Mobile/assets/Mobile/fb.png" alt="">
-          <img src="assets/Mobile/assets/Mobile/google.png" alt="">
+          <img src="assets/Mobile/assets/Mobile/twitter.png" alt="twitter">
+          <img src="assets/Mobile/assets/Mobile/fb.png" alt="facebook">
+          <img src="assets/Mobile/assets/Mobile/google.png" alt="google">
         </div>
       </div>
 
