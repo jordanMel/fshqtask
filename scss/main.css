@@ -1304,35 +1304,35 @@ footer .copyright .copyright-text {
 }
 
 @media all and (min-width: 768px) {
-  .bottom-wrapper {
+  footer .bottom-wrapper {
     padding: 0 20px;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .bottom-wrapper .side .footer-logo {
+  footer .bottom-wrapper .side .footer-logo {
     margin: 30px 0;
   }
-  .bottom-wrapper .logo-images {
+  footer .bottom-wrapper .logo-images {
     height: 37px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .bottom-wrapper .center {
+  footer .bottom-wrapper .center {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-  .bottom-wrapper .center p {
+  footer .bottom-wrapper .center p {
     margin-bottom: 0;
   }
   .form-container {
