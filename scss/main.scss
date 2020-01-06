@@ -12,7 +12,6 @@
 @import "footer";
 @import "mixins";
 
-
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +24,7 @@ body {
 }
 
 .page-body {
-  margin-top: 50px !important;
+  margin-top: 50px;
 }
 
 .hr {
@@ -37,4 +36,3 @@ body {
     display: block;
   }
 }
-
