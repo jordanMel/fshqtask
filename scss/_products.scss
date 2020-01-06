@@ -9,11 +9,11 @@
   .btn {
     &:focus,
     &:active {
-      outline: none !important;
-      box-shadow: none !important;
+      outline: none;
+      box-shadow: none;
     }
     &:hover {
-      color: darken($accent, $amount: 10%) !important;
+      color: darken($accent, $amount: 10%);
     }
   }
 }
@@ -26,21 +26,21 @@
   .view-products-btn {
     margin: 30px 0;
     padding: 13px 30px;
-    border-radius: 20px !important;
+    border-radius: 20px;
     text-align: center;
     border: 0;
     font-size: 0.6em;
     color: $bgColorBlack;
-    outline: none !important;
+    outline: none;
     font-weight: 800;
-    background-color: $accent !important;
+    background-color: $accent;
     cursor: pointer;
 
     &:active {
-      background-color: darken($accent, $amount: 10%) !important;
+      background-color: darken($accent, $amount: 10%);
     }
   }
-  
+
   .chroma-img {
     bottom: 0;
     right: 0;
@@ -51,6 +51,6 @@
 
 @media only screen and (min-width: 768px) {
   .products-section {
-    padding: 0 20px !important;
+    padding: 0 20px;
   }
 }
