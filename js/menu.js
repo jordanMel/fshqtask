@@ -1,4 +1,10 @@
 var menu_close = true;
+var width;
+
+
+window.onresize = function () {
+    this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+}
 
 
 
@@ -31,12 +37,18 @@ function onClickMenuBtn() {
 }
 
 function onclickProductsBtn() {
-    var dropContent = document.getElementsByClassName('dropdown-content');
+    if (width < 768) {
+        var dropContent = document.getElementsByClassName('dropdown-content');
 
-    document.getElementById('title-menu').style.display = 'none';
-    document.getElementById('title-products').style.display = 'block';
-    dropContent[0].style.marginLeft = '0';
+        document.getElementById('title-menu').style.display = 'none';
+        document.getElementById('title-products').style.display = 'block';
+        dropContent[0].style.marginLeft = '0';
+    }
+
 }
+
+document.getElementById('dropdown').onmouseover = function () { document.getElementsByClassName('dropdown-content')[0].style.display = 'block'; }
+document.getElementById('dropdown').onmouseout = function () { document.getElementsByClassName('dropdown-content')[0].style.display = 'none'; }
 
 document.getElementById('title-products').onclick = function () {
     document.getElementById('title-products').style.display = 'none';
@@ -45,9 +57,11 @@ document.getElementById('title-products').onclick = function () {
 }
 
 document.getElementById('headset-link').onclick = function () {
-    document.getElementsByClassName('headset-menu')[0].style.marginLeft = '0';
-    document.getElementById('title-products').style.display = 'none';
-    document.getElementById('title-headset').style.display = 'block';
+    if (width < 768) {
+        document.getElementsByClassName('headset-menu')[0].style.marginLeft = '0';
+        document.getElementById('title-products').style.display = 'none';
+        document.getElementById('title-headset').style.display = 'block';
+    }
 }
 
 document.getElementById('headset-link').onmouseover = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Green Drop Down copy.svg') }

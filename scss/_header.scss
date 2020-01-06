@@ -38,11 +38,11 @@
   width: 120px;
   overflow: hidden;
 
-  &:hover {
-    .dropdown-content {
-      display: block;
-    }
-  }
+  // &:hover {
+  //   .dropdown-content {
+  //     display: block;
+  //   }
+  // }
 }
 
 .dropbtn {
@@ -373,7 +373,7 @@
   }
 
   .navbarwrapper,
-  .headset-menu {
+  .headset-menu, .dropdown-content {
     margin-left: 0 !important;
   }
 

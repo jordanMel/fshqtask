@@ -213,10 +213,6 @@
   overflow: hidden;
 }
 
-.dropdownwrapper:hover .dropdown-content {
-  display: block;
-}
-
 .dropbtn p {
   margin: 0;
 }
@@ -561,7 +557,7 @@
     display: flex;
   }
   .navbarwrapper,
-  .headset-menu {
+  .headset-menu, .dropdown-content {
     margin-left: 0 !important;
   }
   .navbarwrapper {
