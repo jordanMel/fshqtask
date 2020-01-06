@@ -1265,9 +1265,9 @@ footer .bottom-wrapper .center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1333,7 +1333,7 @@ footer .copyright .copyright-text {
             flex-direction: row;
   }
   footer .bottom-wrapper .center p {
-    margin-bottom: 0;
+    margin: 0 10px;
   }
   .form-container {
     -webkit-box-pack: end;

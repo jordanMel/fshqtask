@@ -146,7 +146,7 @@ footer {
     .center {
       flex: 6;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-direction: column;
 
       p {
@@ -194,9 +194,10 @@ footer {
 
     .center {
       align-items: center;
+
       flex-direction: row;
       p {
-        margin-bottom: 0;
+        margin: 0 10px;
       }
     }
   }
