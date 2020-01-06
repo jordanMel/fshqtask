@@ -41,24 +41,24 @@
     }
 
     .previewfull {
-      display: block;
+      display: none;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       position: absolute;
       z-index: -1;
       padding: 13px 30px;
-      border-radius: 20px !important;
+      border-radius: 20px;
       border: none;
       font-size: 0.6em;
-      letter-spacing: 0.5px !important;
+      letter-spacing: 0.5px;
       color: black;
       outline: none;
       font-weight: 800;
-      background-color: $accent !important;
+      background-color: $accent;
 
       &:active {
-        background-color: darken($accent, $amount: 10%) !important;
+        background-color: darken($accent, $amount: 10%);
       }
     }
   }
@@ -80,7 +80,7 @@
 .swiper-pagination-bullet-active {
   height: 11px;
   width: 11px;
-  background-color: $accent !important;
+  background-color: $accent;
   border: 1.5px solid black;
   box-shadow: 0 0 0 1px $accent;
 }
@@ -134,8 +134,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .previewfull {
-    display: none !important;
+@media only screen and (min-width: 768px) {
+  .swiper-slide div .previewfull {
+    display: block;
   }
 }
