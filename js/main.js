@@ -7,6 +7,10 @@ window.onload = function () {
 window.onresize = function () {
     width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
+    if (width < 768) {
+        location.reload();
+    }
+
     initSwiper();
 
 }
