@@ -682,9 +682,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .immersion-section .content {
-    padding: 20px;
-  }
   .immersion-section .content .wrapper-immersion {
     margin-top: 20px;
   }
@@ -701,6 +698,12 @@
   }
   .immersion-section .content .wrapper-immersion .images .razer-nari-logo {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .immersion-section .content {
+    padding: 20px;
   }
 }
 
@@ -1086,7 +1089,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .thx-section .content {
     padding: 0 20px;
   }
@@ -1131,7 +1134,7 @@
 .products-section {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 22px;
 }
 
 .products-section .view-products-btn {
@@ -1159,9 +1162,9 @@
   margin: 15px 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .products-section {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 }
 
@@ -1198,7 +1201,7 @@
 .products-section {
   max-width: 1110px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 22px;
 }
 
 .products-section .view-products-btn {
@@ -1226,9 +1229,9 @@
   margin: 15px 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .products-section {
-    padding: 0 20px;
+    padding: 0 12px;
   }
 }
 

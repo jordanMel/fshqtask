@@ -90,8 +90,6 @@
 @media only screen and (min-width: 768px) {
   .immersion-section {
     .content {
-      padding: 20px;
-
       .wrapper-immersion {
         margin-top: 20px;
 
@@ -120,6 +118,12 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .immersion-section .content {
+    padding: 20px;
   }
 }
 
