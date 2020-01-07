@@ -1,20 +1,6 @@
 var menu_close = true;
 var width;
 
-window.onload = function () {
-    this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log(this.width);
-
-}
-
-window.onresize = function () {
-    this.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log(width);
-
-}
-
-
-
 function onClickMenuBtn() {
 
     var menu_titles = document.getElementsByClassName('menu-titles');
@@ -56,15 +42,6 @@ function onclickProductsBtn() {
 
 }
 
-// document.getElementById('dropdown').onmouseover = function () {
-//     if (width > 769)
-//         document.getElementsByClassName('dropdown-content')[0].style.display = 'block';
-// }
-// document.getElementById('dropdown').onmouseout = function () {
-//     if (width > 769)
-//         document.getElementsByClassName('dropdown-content')[0].style.display = 'none';
-// }
-
 document.getElementById('title-products').onclick = function () {
     document.getElementById('title-products').style.display = 'none';
     document.getElementById('title-menu').style.display = 'block';
@@ -83,7 +60,6 @@ document.getElementById('headset-link').onmouseover = function () { document.get
 document.getElementById('headset-link').onmouseout = function () { document.getElementById('icon-forward').setAttribute('src', 'assets/Desktop/SVG/Gray Drop Down.svg') }
 
 document.getElementById('title-headset').onclick = function () {
-    // console.log('damn');
     document.getElementById('title-headset').style.display = 'none';
     document.getElementById('title-products').style.display = 'block';
     document.getElementsByClassName('headset-menu')[0].style.marginLeft = '100%';

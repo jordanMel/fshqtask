@@ -1,41 +1,77 @@
-// window.onload = function () {
-//    
-// }
 this.initmyslides();
 this.initSwiper();
+
+var mySwiper;
+
 function initSwiper() {
+    if (mySwiper == undefined) {
+        mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
 
-    var mySwiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-
-        },
-        updateOnWindowResize: true,
-        observer: true,
-        observerParents: true,
-        resizeReInit: true,
-        breakpoints: {
-            600: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
             },
-            768: {
-                slidesPerView: 2,
-                slidesPerGroup: 2,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 3,
-                slidesPerGroup: 3,
-                spaceBetween: 20,
-            },
-            1200: {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
-                spaceBetween: 20,
+            updateOnWindowResize: true,
+            observer: true,
+            observerParents: true,
+            resizeReInit: true,
+            breakpoints: {
+                600: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 20,
+                }
             }
-        }
-    });
+        });
+    } else {
+        mySwiper.destroy(true, true);
+        mySwiper = undefined;
+        mySwiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+
+            },
+            updateOnWindowResize: true,
+            observer: true,
+            observerParents: true,
+            resizeReInit: true,
+            breakpoints: {
+                600: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 20,
+                }
+            }
+        });
+
+    }
 
 }
 
