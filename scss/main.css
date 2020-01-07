@@ -752,19 +752,15 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   max-width: 1110px;
   margin: 0 auto;
 }
 
 .comfort-section .features > div {
-  height: 200px;
   width: 350px;
-  padding: 30px;
+  padding: 5px 30px;
   color: white;
 }
 
@@ -782,6 +778,13 @@
 
 .comfort-section .features > div img {
   height: 40px;
+}
+
+@media all and (min-width: 1050px) {
+  .comfort-section .features > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .fs-xs {

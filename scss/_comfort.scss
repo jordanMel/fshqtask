@@ -28,15 +28,13 @@
     margin-top: 130px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
+    justify-content: space-around;
     max-width: 1110px;
     margin: 0 auto;
 
     & > div {
-      height: 200px;
       width: 350px;
-      padding: 30px;
+      padding: 5px 30px;
       color: white;
 
       h3 {
@@ -54,7 +52,13 @@
       img {
         height: 40px;
       }
-      
     }
+  }
+}
+
+@media all and (min-width: 1050px) {
+  .comfort-section .features > div {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
