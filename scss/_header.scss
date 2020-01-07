@@ -37,12 +37,6 @@
   float: left;
   width: 120px;
   overflow: hidden;
-
-  // &:hover {
-  //   .dropdown-content {
-  //     display: block;
-  //   }
-  // }
 }
 
 .dropbtn {
@@ -290,9 +284,11 @@
     .dropdownwrapper div button {
       padding: 0;
       width: 100%;
+      
       p {
         padding-left: 20px;
       }
+
       .drop-icon {
         transform: rotate(-90deg);
         top: 0;
