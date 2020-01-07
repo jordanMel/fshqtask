@@ -1,8 +1,8 @@
-window.onload = function () {
-    this.initmyslides();
-    this.initSwiper();
-}
-
+// window.onload = function () {
+//    
+// }
+this.initmyslides();
+this.initSwiper();
 function initSwiper() {
 
     var mySwiper = new Swiper('.swiper-container', {

@@ -541,11 +541,14 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .header {
     height: 50px !important;
   }
   .headset-link-wrapper:hover .headset-menu {
+    display: block;
+  }
+  .dropdownwrapper:hover .dropdown-content {
     display: block;
   }
   .menu-titles {
